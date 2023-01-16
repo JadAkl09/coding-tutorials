@@ -81,3 +81,5 @@ print([(x,x+1) for x in range(10)])
 # HOMEWORK
 # n is a square (i.e n = x**2 for some x)
 # i want an x by x matrix with values 1,2,3,4,...,n 
+
+# THis new line added by maciek
