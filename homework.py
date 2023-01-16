@@ -1,16 +1,19 @@
+from math import sqrt
+
+
 def possibilities(n):
     if n <= 2:
         return n
     return possibilities(n-2) + possibilities(n-1)
     
-# print(possibilities(40))
+print(possibilities(2016))
 
 def poss(n):
     results = [1,2]
     for i in range(n):
         results.append(results[-1] + results[-2])
-    return results[-1]
     
+    return results[-1]
 
 def exposed_pos(n):
     initial_possiblities = [0,1,2]
@@ -78,5 +81,3 @@ print([(x,x+1) for x in range(10)])
 # HOMEWORK
 # n is a square (i.e n = x**2 for some x)
 # i want an x by x matrix with values 1,2,3,4,...,n 
-
-print([[]])
